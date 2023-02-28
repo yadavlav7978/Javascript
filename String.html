@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, id omnis corporis odio minus iste hic nisi, nostrum consequatur consectetur dolore quae obcaecati, nulla atque.</p>
+    </div>
+
+    <script>
+        var first_name='Lav';
+        var last_name="Yadav";
+        var about="Hi my self is lav yadav!";
+
+        console.log("Fisrt name is :"+first_name);
+        console.log("Last name is :"+last_name);
+        console.log(first_name+last_name);
+        console.log("about :"+about);
+
+        // Template literals, also known as template strings, it make easy to embed/insert expressions inside a string using ${expression} syntax. 
+        // This is useful for building dynamic strings that depend on variables or other data.
+        
+        var age=22;
+        var string=`${first_name} ${last_name} is a good boy and ${age} years old.`;
+        console.log(string); 
+
+        var len=string.length;
+
+        console.log(`Length of string "${string}" is : ${len}`);
+
+    </script>
+    
+</body>
+</html>
