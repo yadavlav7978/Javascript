@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur hic iusto saepe maiores ut laborum est optio, incidunt labore officia.</p>
+    </div>
+
+    <script>
+
+        var s="this is string";
+        console.log('string : '+s);
+
+        // It give first occurence of a substring(0 based indexing)
+        var indx=s.indexOf('is');
+        console.log('First index of "is" : '+indx);
+
+        //It give last occurence of a substring
+        indx=s.lastIndexOf('is');
+        console.log("Last index of 'is' : "+indx);
+
+        // Extract substring from string
+
+        var str=s.substr(1,5); // it takes length as a second arguement
+        console.log("Substring starting from index 1 and of length 5 is : "+str);
+
+        str=s.substring(1,5);  // it takes index as a second arguement
+        console.log("Substring starting from index 1 and ending at index 4 : "+str)
+
+        // replaced substring 
+
+        var rep=s.replace("string","New string")
+        console.log("After replacing : "+rep);
+
+        //uppercase and lowercase
+
+        var up=s.toUpperCase();
+        console.log("After using uppercase : "+up);
+
+        // How to get index of a particular character in string
+
+        var ch=s.charAt(6);
+        console.log('character at index 6 is :'+ch);
+
+        // Removing white space from starting and ending of a string
+        // But it not remove white space present at middle of string
+        
+        var s1="        lav          yadav     is   a good     boy               ";
+        console.log("Before trimming the string : "+s1);
+        console.log("After removing white space : "+s1.trim());
+
+    </script>
+    
+</body>
+</html>
