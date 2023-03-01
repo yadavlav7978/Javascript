@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects </title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit explicabo architecto necessitatibus commodi asperiores quaerat vel dicta in rerum.</p>
+    </div>
+     
+    <script>
+
+        // In JavaScript, an object is a collection of key-value pairs, where the keys are strings and the values can be any data type, including other objects. 
+
+        let student={
+            name:"Lav yadav",
+            age:22,
+            skill:["c++","Html","CSS"],
+            'mob no':7983593939,
+
+        }
+
+        // To access the value we can use either of the following syntaxes:
+
+        console.log("mobile no: "+student['mob no']); // it is helpful if key has a space (Eg: 'mob no':)
+        console.log("age: "+student.age);
+
+        // we can also add or modify properties in an object dynamically using the assignment operator:
+
+        student.grade=8;      // we added new property 'grade' to the student object
+        student.skill.push("Javascript");
+
+        console.log(student);
+
+        // In JavaScript, an array is a data structure that stores a collection of elements, which can be of any data type, including other arrays or objects. 
+        // An array is a zero-indexed list.
+
+        let arr=[3,2,'Lav yadav',5,3.125,1];  // eg
+
+        // For access the element from the array we can use following syntax
+
+        console.log("Element at index 4 is : "+arr[4]);
+
+        // we can also add or remove elements from an array dynamically using methods, such as push(), pop(),
+
+        arr.push("mango"); // push the element
+
+        // array also have length property to get the length of the array
+
+        console.log("Length of the array : "+arr.length);
+
+        // array also have sort function to sort the array
+
+        arr=arr.sort();
+        console.log("After sorting the array : "+arr);
+
+        
+    </script>
+
+    
+</body>
+</html>
